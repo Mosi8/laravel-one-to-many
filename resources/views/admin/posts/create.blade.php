@@ -27,7 +27,7 @@
       <button type="submit" class="btn btn-warning my-3">Crea Post</button>
   </form>
 
-  <a href="{{route('admin.posts.index')}}"><button type="button" class="btn btn-dark">Back</button></a> 
+  <a href="{{route('admin.posts.index')}}"><button type="button" class="btn btn-light">Back</button></a> 
   
 
   @if ($errors->any())
