@@ -23,6 +23,20 @@
               <div class="alert alert-danger">{{ $message }}</div>
           @enderror
       </div>
+
+      <div class="form-group">
+          <label>Categoria</label>
+          <select name="category_id" class="form-control">
+            <option value="">-- seleziona categoria --</option>
+            @foreach ($categories as $category)
+                <option value="{{$category->id}}" {{$category->id == old('category_id', $post->category_id) ? 'selected' : ''}}>{{$category->name}}</option>
+            @endforeach
+          </select>
+      </div>
+      @foreach ($categories as $category)
+       
+      @endforeach
+      
       
       
       <button type="submit" class="btn btn-warning my-3">Salva</button>
